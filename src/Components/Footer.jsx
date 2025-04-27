@@ -29,23 +29,29 @@ export default function Footer() {
                     {/* Contact Info & Social Media */}
                     <div>
                         <h2 className="text-xl font-bold mb-3">Contact</h2>
-                        <p className="text-white">Email: support@example.com</p>
-                        <p className="text-white">Phone: +123 456 7890</p>
+                        <p className="text-white cursor-pointer">
+                            <a href="mailto:karunalazar5602@gmail.com" className="hover:underline">
+                                Email: karunalazar5602@gmail.com
+                            </a>
+                        </p>
+                        <p className="text-white">Phone: +919778020459</p>
 
                         {/* Social Media Icons */}
                         <div className="flex justify-center md:justify-start gap-4 mt-4">
-                            <a href="#" className="text-white hover:text-blue-500 transition text-xl"><FaFacebook /></a>
-                            <a href="#" className="text-white hover:text-pink-500 transition text-xl"><FaInstagram /></a>
-                            <a href="#" className="text-white hover:text-blue-400 transition text-xl"><FaTwitter /></a>
-                            <a href="#" className="text-white hover:text-red-500 transition text-xl"><FaEnvelope /></a>
+                            <a href="#" className="text-white hover:text-blue-500 transition text-xl cursor-pointer"><FaFacebook /></a>
+                            <a href="#" className="text-white hover:text-pink-500 transition text-xl cursor-pointer"><FaInstagram /></a>
+                            <a href="#" className="text-white hover:text-blue-400 transition text-xl cursor-pointer"><FaTwitter /></a>
+                            <a href="mailto:karunalazar5602@gmail.com" className="text-white hover:text-red-500 transition text-xl cursor-pointer"><FaEnvelope /></a>
                         </div>
                     </div>
                 </div>
+
 
                 {/* Copyright Section */}
                 <div className="text-center text-white text-sm mt-10 border-t border-white pt-4">
                     &copy; {new Date().getFullYear()} Your Website. All rights reserved.
                 </div>
+
             </div>
         </footer>
     );
